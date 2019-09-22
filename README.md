@@ -35,7 +35,7 @@ ReactDOM.render(
 2. Use the hooks
 
 ```jsx
-import React, { Component } from 'react'
+import React, { useEffect,  useState} from 'react'
 
 import useJsonBox from 'react-jsonbox'
 
@@ -47,6 +47,8 @@ const Example = () => {
     const { data } = await read()
     setValues(data)
   }
+  
+  useEffect(() => {getData()}, [])
 
   return (
     <ul>
