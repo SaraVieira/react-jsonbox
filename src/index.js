@@ -1,21 +1,4 @@
-import * as React from 'react'
+import useJsonBox from './useJsonBox'
+export { JsonBoxProvider } from './context'
 
-export const useMyHook = () => {
-  let [{
-    counter
-  }, setState] = React.useState({
-    counter: 0
-  })
-
-  React.useEffect(() => {
-    let interval = window.setInterval(() => {
-      counter++
-      setState({counter})
-    }, 1000)
-    return () => {
-      window.clearInterval(interval)
-    }
-  }, [])
-
-  return counter
-}
+export default useJsonBox

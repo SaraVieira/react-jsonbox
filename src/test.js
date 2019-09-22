@@ -1,7 +1,7 @@
-import { useMyHook } from './'
+import useJsonBox from './'
 
 describe('useMyHook', () => {
   it('is truthy', () => {
-    expect(useMyHook).toBeTruthy()
+    expect(useJsonBox).toBeTruthy()
   })
 })
