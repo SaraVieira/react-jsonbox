@@ -40,7 +40,7 @@ import React, { useEffect,  useState} from 'react'
 import useJsonBox from 'react-jsonbox'
 
 const Example = () => {
-  const { get } = useJsonBox()
+  const { read } = useJsonBox()
   const [values, setValues] = useState([])
 
   const getData = async () => {
